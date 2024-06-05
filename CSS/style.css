@@ -20,7 +20,7 @@ input, button, textarea {
     font:inherit;
 }
 
-/* || VARIALES */
+/* || VARIABLES */
 :root {
     /* FONT */
     --FF: "Nunito", sans-serif;
@@ -53,7 +53,7 @@ input, button, textarea {
 
 
     /* STANDARD PADDING */
-   --PADDING-TB: O.25em;
+   --PADDING-TB: 0.25em;
    --PADDING-SIDE: 2.5%;
 
    /* STANDARD MARGIN */
@@ -131,20 +131,20 @@ input, button, textarea {
 
     h3 {
         margin-bottom: 1em;
-        color: var(--HIGHLIGHT-COLOR) ;
+        color: gold ;
         text-align: center;  
     }
 
     h5 {
         text-align: center;
-        color:orange;
-        font-size:xx-large;
+        color:rgb(255, 197, 255);
+        font-size:large;
     }
 
     p {
         line-height: 1.5;
         text-align: center;
-        color:gold; 
+        color:lime; 
     } 
 
     a:any-link {
@@ -223,10 +223,6 @@ gap:1rem;
 }
 
      
-      /* 
-        background-color: var(--HEADER-BGCOLOR);
-      }
-       */
     /* || FOOTER */
     .footer {
             padding: sticky;
@@ -259,14 +255,8 @@ gap:1rem;
       }
 
 
-      /* || about
-      .about__trivia {
-        margin: var(--MARGIN);
-      }
-
-      .about__trivia-answer {
-        margin-top: 1em;
-      } */
+      /* || about */
+     
 
       /* || CONTACT */
       .contact__h2 {
@@ -282,7 +272,13 @@ gap:1rem;
       }
 
       .contact__fieldset {
-         border:none;
+         border: none;
+         color: lime;
+        
+      }
+      legend {
+        display: block;
+        margin: auto;
       }
 
       .contact__p {
@@ -303,6 +299,7 @@ gap:1rem;
 }
 
       .contact__button {
+         margin-inline-start: 20px;
          padding: 0.5em;
          border-radius: var(--BORDER-RADIUS);
          background-color: var(--HIGHLIGHT-COLOR);
