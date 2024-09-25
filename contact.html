@@ -8,11 +8,12 @@
     <title>IdyllAc Contact</title>
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://kit.fontawesome.com/cbdd759dc1.js" crossorigin="anonymous"></script>
     <script src="js/main.js defer"></script>
 </head>
 <body>
     <header class="header">
-        <h1 class="header__h1">IdyllAc Contact</h1>
+        <h1 class="header__h1" style="letter-spacing: 1px;"><i class="fa-solid fa-people-pulling"></i>IdyllAc Contact<i class="fa-solid fa-people-pulling"></i></h1>
         <nav class="header__nav">
         <ul class="header__ul">
             <li>
@@ -41,25 +42,17 @@
           </section>
            <br>
 
-           <main class="main"> 
-               <h2>Our Location</h2>
-                <address>
-                   25 Allée Saint Saëns <br>
-                   92100 Suresnes<br>
-                   Hauts-de-Sains <br>
-                   France-Paris
-                   <br><br>
-                   E-mail: w@w <br>
-                   Phone: <a href="tel:+33641436667">064-143-6667</a>
-                </address>   
+          
+               
             
             <article class="main__article contact">
               
-                <h2 class="contact__h2">Our Contact Form</h2>
+                <h2 class="contact__h2">Fill out the form of contact from here:<br></h2>
 
-           <form action="https://httpbin.org" method="get" class="contact__form"> 
+           <!-- <form action="https://httpbin.org" method="get" class="contact__form">  -->
+           <form action="connect.html" method="POST" class="contact__form"> 
             <fieldset class="contact__fieldset">
-              <legend class="offscreen">:دون رسالتك هنا</legend>
+              <legend class="offscreen"><i class="fa-regular fa-hand-point-down"></i> :دون رسالتك هنا</legend>
               <p class="contact__p">
                 <label class="contact__label" for="name">Name:</label>
                 <input class="contact__input" type="text" name="name" id="name" placeholder="your name" required>
@@ -84,5 +77,14 @@
               <span class="nowrap">Copyright &copy; <time id="year"></time></span>
               <span class="nowrap">IdyllAc</span>
        </footer>
+
+     <!-- Scripts -->
+<script src="assets/js/iquery-min.js"></script>
+<script src="assets/is/jquery.scrolly-min.js"></script>
+<script src="assets/js/jquery-poptrox.min.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+
 </body>
 </html>

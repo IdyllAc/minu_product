@@ -29,7 +29,7 @@ input, button, textarea {
 
    
    /* COLORS */
-   --BGCOLOR-FADE: rgb(252, 220, 160);
+   /* --BGCOLOR-FADE: rgb(252, 220, 160);
    --BGCOLOR:orange;
    --BGIMAGE: linear-gradient(to bottom, var(--BGCOLOR), var(--BGCOLOR-FADE));
    --BODY-BGCOLOR:#FFF;
@@ -44,7 +44,24 @@ input, button, textarea {
    --LINK-ACTIVE: orange;
    --LINK-COLOR: #000;
    --LINK-HOVER: hsla(0, 0%, 0%, 0.6);
-   --NAV-BGCOLOR: #FFF;
+   --NAV-BGCOLOR: #FFF; */
+
+   --BGCOLOR-FADE: gray;
+   --BGCOLOR: #000;
+   --BGIMAGE: linear-gradient(to right, var(--BGCOLOR), var(--BGCOLOR-FADE), var(--BGCOLOR), var(--BGCOLOR-FADE), var(--BGCOLOR), var(--BGCOLOR-FADE), var(--BGCOLOR), var(--BGCOLOR-FADE), var(--BGCOLOR), var(--BGCOLOR-FADE),var(--BGCOLOR), var(--BGCOLOR-FADE),var(--BGCOLOR), var(--BGCOLOR-FADE), var(--BGCOLOR), var(--BGCOLOR-FADE), var(--BGCOLOR), var(--BGCOLOR-FADE), var(--BGCOLOR), var(--BGCOLOR-FADE), var(--BGCOLOR), var(--BGCOLOR-FADE), var(--BGCOLOR), var(--BGCOLOR-FADE), var(--BGCOLOR), var(--BGCOLOR-FADE), var(--BGCOLOR), var(--BGCOLOR-FADE), var(--BGCOLOR), var(--BGCOLOR-FADE), var(--BGCOLOR), var(--BGCOLOR-FADE), var(--BGCOLOR), var(--BGCOLOR-FADE), var(--BGCOLOR), var(--BGCOLOR-FADE), var(--BGCOLOR), var(--BGCOLOR-FADE), var(--BGCOLOR), var(--BGCOLOR-FADE), var(--BGCOLOR), var(--BGCOLOR-FADE), var(--BGCOLOR), var(--BGCOLOR-FADE), var(--BGCOLOR), var(--BGCOLOR-FADE), var(--BGCOLOR), var(--BGCOLOR-FADE), var(--BGCOLOR), var(--BGCOLOR-FADE), var(--BGCOLOR), var(--BGCOLOR-FADE), var(--BGCOLOR), var(--BGCOLOR-FADE), var(--BGCOLOR), var(--BGCOLOR-FADE), var(--BGCOLOR), var(--BGCOLOR-FADE), var(--BGCOLOR), var(--BGCOLOR-FADE), var(--BGCOLOR), var(--BGCOLOR-FADE), var(--BGCOLOR), var(--BGCOLOR-FADE));
+   --BODY-BGCOLOR:#333;
+   --BORDER-COLOR: whitesmoke;
+   --BUTTON_COLOR:#000;
+   --FONT-COLOR: whitesmoke;
+   --HEADER-BGCOLOR: #333;
+   --HEADER-COLOR: #FFF;
+   --HERO-BGCOLOR: rgba(51, 178, 51, 0.75);
+   --HERO-COLOR: #FFF;
+   --HIGHLIGHT-COLOR: rgb(51, 178, 51, 0.75);
+   --LINK-ACTIVE: orange;
+   --LINK-COLOR: #000;
+   --LINK-HOVER: orange;
+   --NAV-BGCOLOR: rgb(20, 20, 20);
    
 
    /* BORDERS */
@@ -85,7 +102,7 @@ input, button, textarea {
     position: relative;
      text-align: center;
     /* left: -10000px; */
-    color: greenyellow;
+    color: red;
     }
     
     
@@ -100,7 +117,8 @@ input, button, textarea {
     html {scroll-behavior: smooth;
     font-size: var(--FS);
     font-family: var(--FF);
-    background-color: var(--BGCOLOR); background-image: var(--BGIMAGE)
+    background-color: var(--BGCOLOR);
+    background-image: var(--BGIMAGE);
     }  
     
     body {
@@ -118,15 +136,16 @@ input, button, textarea {
     h2,
     h3 {
         font-family: var(--FF-HEADINGS);
-        letter-spacing: 0.1em;
+        letter-spacing: 1px;
     }
 
 
     h2 {
- margin-bottom: 1em;
+        margin-bottom: 1em;
         /* color: var(--HIGHLIGHT-COLOR) */
         color:burlywood;
-        text-align: center
+        text-align: center;
+        letter-spacing: 1px;
     }
 
     h3 {
@@ -141,11 +160,6 @@ input, button, textarea {
         font-size:large;
     }
 
-    p {
-        line-height: 1.5;
-        text-align: center;
-        color:lime; 
-    } 
 
     a:any-link {
         color: var(--LINK-COLOR);
@@ -264,11 +278,14 @@ gap:1rem;
       }
 
       p {
+        line-height: 1.25rem;
+        text-align: center;
+        color:lime; 
         text-align:justify;
         margin: 1em;
         padding-left: 20px;
         padding-right: 20px;
-        justify-items:auto;
+		text-align-last: right;
       }
 
       .contact__fieldset {
@@ -398,10 +415,10 @@ gap:1rem;
 
     @media screen and (min-width: 576px) {
         .header__h1::before {
-        content: '/'
+        content: ''/
         }
         .header__h1::after {
-            content: ' /'
+            content: ''/
         }
 
         .menu__header,
